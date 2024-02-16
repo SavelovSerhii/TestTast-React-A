@@ -1,0 +1,50 @@
+.ImageList__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: wheat;
+    border: 10px solid tan;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+.ImageList__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 10px solid tan;
+    transition: all 0.5s;
+}
+
+.ImageList__item:hover {
+    background-color: rgb(228, 202, 168);
+}
+
+.ImageList__item:last-child {
+    border: 0;
+}
+
+.ImageList__container {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.ImageList__author {
+    align-self: flex-end;
+}
+
+.ImageList__button {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    font-size: 24px;
+}
